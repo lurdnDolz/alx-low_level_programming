@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - prints the size of various types
  * Return: 0 if exited properly, non-zero otherwise
@@ -11,7 +10,6 @@ int i;
 long li;
 long long lli;
 float f;
-
 printf("Size of a char: %d bytes(s)\n", sizeof(c));
 printf("Size of an int: %d bytes(s)\n", sizeof(i));
 printf("Size of a long int: %d bytes(s)\n", sizeof(li));
