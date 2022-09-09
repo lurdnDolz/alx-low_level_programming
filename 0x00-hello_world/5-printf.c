@@ -1,14 +1,13 @@
-#include <studio.h>
+#include <stdio.h>
 
 /**
- * main - print the string in the put function
+ * main - print the string in the put funtion
  *
  * Description: using the main function
- * this program prints the statement given
  * Return: 0
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
+printf("with proper grammar, but the outcome is a piece of art,\n");
+return (0);
 }
