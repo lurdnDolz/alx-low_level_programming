@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * main - prints the size of various types
- * Return: 0 if exited properly, non-zero otherwise
+ * main - print the string in the put function
+ *
+ * Description: using the main function
+ * Return: 0
  */
 int main(void)
 {
