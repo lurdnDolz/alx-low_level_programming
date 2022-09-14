@@ -14,6 +14,7 @@ void times_table(void)
 		{
 			multiplied_value = x * y;
 			if (x == 0)
+			:wq
 			{
 				_putchar(multiplied_value + '0');
 			}
@@ -36,4 +37,4 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-{
+}
