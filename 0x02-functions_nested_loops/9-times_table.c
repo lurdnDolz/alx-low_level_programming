@@ -1,39 +1,31 @@
 #include "main.h"
+
 /**
- * times_table - Print 9 times table
- *
- * Return: Void
+ * times_table - prints the 9 times table
  */
 void times_table(void)
 {
-	int x, y, multiplied_value;
+	int num, mult, prod;
 
-	for (y = 0; y < 10; y++)
+	for (num = 0; num <= 9; ++num)
 	{
-		for (x = 0; x < 10; x++)
+		_putchar(48);
+		for (mult = 1; mult <= 9; ++mult)
 		{
-			multiplied_value = x * y;
-			if (x == 0)
-			:wq
-			{
-				_putchar(multiplied_value + '0');
-			}
-			else if (multiplied_value >= 10)
-			{
+			_putchar(',');
+			_putchar(' ');
+
+			prod = num * mult;
+
+			/*
+			 * put space if product is a single number
+			 * place the first digit if its two numbers
+			 */
+			if (prod <= 9)
 				_putchar(' ');
-				_putchar(multiplied_value / 10 + '0');
-				_putchar(multiplied_value % 10 + '0');
-			}
 			else
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(multiplied_value + '0');
-			}
-			if (x != 9)
-			{
-				_putchar(',');
-			}
+				_putchar((prod / 10) + 48); /*get the first digit*/
+			_putchar((prod % 10) + 48); /*get the second digit*/
 		}
 		_putchar('\n');
 	}
